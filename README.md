@@ -39,7 +39,9 @@ Research code lives in private repositories for now; demo videos and a write-up 
 | Project | What it is |
 | --- | --- |
 | [cpp-algorithms-portfolio](https://github.com/Janga786/cpp-algorithms-portfolio) | Six classical CS algorithms in clean, self-contained C++17 — union-find, MST, Huffman, optimal BST DP |
-| [basecamp](https://github.com/Janga786/basecamp) | Mobile-first PWA daily command center — React + TypeScript, swappable localStorage/Supabase backend, Google Health API sync |
+| [pacman-pygame](https://github.com/Janga786/pacman-pygame) | A complete Pac-Man clone in 443 lines of Pygame — four ghosts with target-chasing AI, power pellets, level state machine |
+
+Also building Basecamp, a mobile-first training/habits PWA (React + TypeScript + Vite, swappable localStorage/Supabase backend, Google Health API sync) — private repo.
 
 Also: member of Fort Lewis College's NASA Rover Challenge team (mechanical + software).
 
