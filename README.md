@@ -23,8 +23,8 @@ Research code lives in private repositories for now; demo videos and a write-up 
 | [hexapod-cpg](https://github.com/Janga786/hexapod-cpg) | Custom 18-DoF hexapod robot — Kuramoto-CPG locomotion controller, IMU heading-hold autonomous firmware, full mechanical CAD, 34-test verification suite |
 | [kuka-kr6-kinematics](https://github.com/Janga786/kuka-kr6-kinematics) | From-scratch forward/inverse kinematics, geometric Jacobian, singularity diagnostics, and trajectory planning for the KUKA KR 6 R900 — 39-test suite |
 | [lidar-pointcloud-motion-pipeline](https://github.com/Janga786/lidar-pointcloud-motion-pipeline) | Open3D + NumPy point-cloud motion analysis: PCA orientation, frame-pair motion detection, ICP rotation-rate estimation |
-| [CV-YOLO-Inspection](https://github.com/Janga786/CV-YOLO-Inspection) | YOLO thermal-hotspot detection for robotic solar-panel inspection on a Sawyer arm |
-| [robot_vision](https://github.com/Janga786/robot_vision) | Blender-based synthetic training-data generation + YOLO training for robotic inspection |
+| [CV-YOLO-Inspection](https://github.com/Janga786/CV-YOLO-Inspection) | Synthetic-data inspection pipeline — Blender-rendered training data, YOLO11 detection, autoencoder anomaly detection |
+| [robot_vision](https://github.com/Janga786/robot_vision) | Synthetic labeled training data from a single photogrammetry scan — Blender domain randomization into YOLO training |
 
 ### Embedded systems & hardware
 
