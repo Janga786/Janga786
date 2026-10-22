@@ -11,9 +11,9 @@ Computer engineering student at Fort Lewis College working on robot learning and
 | [xembench](https://github.com/Janga786/xembench) | Cross-embodiment, language-grounded manipulation benchmark in ManiSkill3: one policy interface, a Franka Panda arm and a Unitree G1 humanoid. 6,550 baseline episodes with Wilson CIs, a data-flywheel round, a documented negative result on precision manipulation, 198 tests |
 | [k1-vlm-navigation](https://github.com/Janga786/k1-vlm-navigation) | NaVILA vision-language model driving a velocity-tracking PPO locomotion policy on the Booster K1 humanoid in MuJoCo, with multi-step instructions, heading assist, and a real-robot deploy path (dry-run and live modes, watchdog, 58 unit tests) |
 | [k1_checkout_validator](https://github.com/Janga786/k1_checkout_validator) | ROS 2 cart-seek stack for the real K1: YOLO-World detection, odom-frame tracking, and a gated, hard-clamped Booster SDK bridge with a lost-target stop |
-| [rebot-crack-vision](https://github.com/Janga786/rebot-crack-vision) | Zero-shot crack segmentation for a reBot B601-DM concrete-inspection arm, spec-driven with decision records. Robot-side work is simulation only so far |
+| [rebot-crack-vision](https://github.com/Janga786/rebot-crack-vision) | Senior-design bridge crack-inspection arm (reBot B601-DM, 6+1 DoF): zero-shot crack segmentation, Jacobian/IK and minimum-jerk planning, and first powered hardware runs (Oct 2026): 7 motors over CAN at 200 Hz, gravity/friction feed-forward identified on the real arm, hold error ≤ 0.005 rad over 41 logged runs |
 
-Canonical NaVILA-on-K1 benchmark results (1,077 episodes) are simulation-only. The write-up and evidence ledger are on the [portfolio](https://janga786.github.io). The research workspace stays private.
+Canonical NaVILA-on-K1 benchmark results (1,077 episodes, simulation) and the evaluation-reliability evidence behind the AIRC 2027 paper in preparation are in [k1-navila-research](https://github.com/Janga786/k1-navila-research); the write-up is on the [portfolio](https://janga786.github.io).
 
 ## Robotics, perception and controls
 
@@ -45,6 +45,7 @@ Canonical NaVILA-on-K1 benchmark results (1,077 episodes) are simulation-only. T
 ## Experience
 
 - **Research Assistant, humanoid robotics** (Fort Lewis College): integrated the Booster K1 into a vision-language navigation benchmark.
+- **Senior design, bridge crack-inspection arm** (Fort Lewis College, team of two): CAN motor bring-up, kinematics and trajectory planning, and controller tuning on the physical reBot B601-DM.
 - **Team lead, NASA Colorado Robotics Challenge:** led a four-person team that built and fielded an autonomous 18-DoF hexapod.
 - **Research Assistant, AI and robotics** (Fort Lewis College): restored legacy Sawyer and Baxter robots and built synthetic-data and inspection tooling.
 
