@@ -9,7 +9,7 @@ Computer engineering student at Fort Lewis College working on robot learning and
 | Project | What it is |
 | --- | --- |
 | [xembench](https://github.com/Janga786/xembench) | Cross-embodiment, language-grounded manipulation benchmark in ManiSkill3: one policy interface, a Franka Panda arm and a Unitree G1 humanoid. 6,550 baseline episodes with Wilson CIs, a data-flywheel round, a documented negative result on precision manipulation, 198 tests |
-| [k1-vlm-navigation](https://github.com/Janga786/k1-vlm-navigation) | NaVILA vision-language model driving a velocity-tracking PPO locomotion policy on the Booster K1 humanoid in MuJoCo, with multi-step instructions, heading assist, and a real-robot deploy path (dry-run and live modes, watchdog, 58 unit tests) |
+| [k1-vlm-navigation](https://github.com/Janga786/k1-vlm-navigation) | NaVILA vision-language model driving a velocity-tracking PPO locomotion policy on the Booster K1 humanoid in MuJoCo, with multi-step instructions, heading assist, and a real-robot deploy path (dry-run and live modes, watchdog, 73 unit tests) |
 | [k1_checkout_validator](https://github.com/Janga786/k1_checkout_validator) | ROS 2 cart-seek stack for the real K1: YOLO-World detection, odom-frame tracking, and a gated, hard-clamped Booster SDK bridge with a lost-target stop |
 | [rebot-crack-vision](https://github.com/Janga786/rebot-crack-vision) | Senior-design bridge crack-inspection arm (reBot B601-DM, 6+1 DoF): zero-shot crack segmentation, Jacobian/IK and minimum-jerk planning, and first powered hardware runs (Oct 2026): 7 motors over CAN at 200 Hz, gravity/friction feed-forward identified on the real arm, hold error ≤ 0.005 rad over 41 logged runs |
 
