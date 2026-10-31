@@ -11,7 +11,7 @@ Computer engineering student at Fort Lewis College working on robot learning and
 | [xembench](https://github.com/Janga786/xembench) | Cross-embodiment, language-grounded manipulation benchmark in ManiSkill3: one policy interface, a Franka Panda arm and a Unitree G1 humanoid. 6,550 baseline episodes with Wilson CIs, a data-flywheel round, a documented negative result on precision manipulation, 198 tests |
 | [k1-vlm-navigation](https://github.com/Janga786/k1-vlm-navigation) | NaVILA vision-language model driving a velocity-tracking PPO locomotion policy on the Booster K1 humanoid in MuJoCo, with multi-step instructions, heading assist, and a real-robot deploy path (dry-run and live modes, watchdog, 73 unit tests) |
 | [k1_checkout_validator](https://github.com/Janga786/k1_checkout_validator) | ROS 2 cart-seek stack for the real K1: YOLO-World detection, odom-frame tracking, and a gated, hard-clamped Booster SDK bridge with a lost-target stop |
-| [rebot-crack-vision](https://github.com/Janga786/rebot-crack-vision) | Senior-design bridge crack-inspection arm (reBot B601-DM, 6+1 DoF): zero-shot crack segmentation, Jacobian/IK and minimum-jerk planning, and first powered hardware runs (Oct 2026): 7 motors over CAN at 200 Hz, gravity/friction feed-forward identified on the real arm, post-tuning hold error ≤ 0.005 rad across a 41-run logged campaign |
+| [rebot-crack-vision](https://github.com/Janga786/rebot-crack-vision) | Senior-design bridge crack-inspection arm (reBot B601-DM, 6+1 DoF): zero-shot crack segmentation, Jacobian/IK and minimum-jerk planning, and first powered hardware runs (Oct 2026): 7 motors over CAN at 200 Hz, gravity/friction feed-forward identified on the real arm; post-tuning holds reached ≤ 0.005 rad error (41-run logged campaign, 28 completed) |
 
 Canonical NaVILA-on-K1 benchmark results (1,077 episodes, simulation) and the evaluation-reliability evidence behind the AIRC 2027 paper in preparation are in [k1-navila-research](https://github.com/Janga786/k1-navila-research); the write-up is on the [portfolio](https://janga786.github.io).
 
@@ -19,7 +19,7 @@ Canonical NaVILA-on-K1 benchmark results (1,077 episodes, simulation) and the ev
 
 | Project | What it is |
 | --- | --- |
-| [hexapod-cpg](https://github.com/Janga786/hexapod-cpg) | Custom 18-DoF hexapod from the NASA Colorado Robotics Challenge: Kuramoto-CPG locomotion, IMU heading-hold firmware, mechanical CAD, 34-test verification suite |
+| [hexapod-cpg](https://github.com/Janga786/hexapod-cpg) | Custom 18-DoF hexapod from the NASA Colorado Robotics Challenge (chassis derived from an open-source skeleton): fielded IMU heading-hold firmware, mechanical CAD, and a simulation-only Kuramoto-CPG gait study with a 34-test suite |
 | [kuka-kr6-kinematics](https://github.com/Janga786/kuka-kr6-kinematics) | From-scratch forward/inverse kinematics, geometric Jacobian, singularity diagnostics, and trajectory planning for the KUKA KR 6 R900, with a 39-test suite |
 | [lidar-pointcloud-motion-pipeline](https://github.com/Janga786/lidar-pointcloud-motion-pipeline) | Open3D + NumPy point-cloud motion analysis: PCA orientation, frame-pair motion detection, ICP rotation-rate estimation |
 | [CV-YOLO-Inspection](https://github.com/Janga786/CV-YOLO-Inspection) | Synthetic-data inspection pipeline: Blender-rendered training data, YOLO11 detection, autoencoder anomaly detection |
