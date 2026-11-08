@@ -13,7 +13,7 @@ Computer engineering student at Fort Lewis College working on robot learning and
 | [k1_checkout_validator](https://github.com/Janga786/k1_checkout_validator) | ROS 2 cart-seek stack for the real K1: YOLO-World detection, odom-frame tracking, and a gated, hard-clamped Booster SDK bridge with a lost-target stop |
 | [rebot-crack-vision](https://github.com/Janga786/rebot-crack-vision) | Senior-design bridge crack-inspection arm (reBot B601-DM, 6+1 DoF): zero-shot crack segmentation, Jacobian/IK and minimum-jerk planning, and first powered hardware runs (Oct 2026): 7 motors over CAN at 200 Hz, gravity/friction feed-forward identified on the real arm; post-tuning holds reached ≤ 0.005 rad error (41-run logged campaign, 28 completed) |
 
-Canonical NaVILA-on-K1 benchmark results (1,077 episodes, simulation) and the evaluation-reliability evidence behind the AIRC 2027 paper in preparation are in [k1-navila-research](https://github.com/Janga786/k1-navila-research); the write-up is on the [portfolio](https://janga786.github.io).
+Canonical NaVILA-on-K1 benchmark results (1,077 episodes, simulation) and the evidence base for the K1 evaluation-reliability results (two identically configured 300-episode runs: 15.0% vs 16.0% success, disagreeing on 11.0% of episodes) are in [k1-navila-research](https://github.com/Janga786/k1-navila-research); the write-up is on the [portfolio](https://janga786.github.io).
 
 ## Robotics, perception and controls
 
@@ -44,10 +44,11 @@ Canonical NaVILA-on-K1 benchmark results (1,077 episodes, simulation) and the ev
 
 ## Experience
 
-- **Research Assistant, humanoid robotics** (Fort Lewis College): integrated the Booster K1 into a vision-language navigation benchmark.
-- **Senior design, bridge crack-inspection arm** (Fort Lewis College, team of two): CAN motor bring-up, kinematics and trajectory planning, and controller tuning on the physical reBot B601-DM.
-- **Team lead, NASA Colorado Robotics Challenge:** led a four-person team that built and fielded an autonomous 18-DoF hexapod.
-- **Research Assistant, AI and robotics** (Fort Lewis College): restored legacy Sawyer and Baxter robots and built synthetic-data and inspection tooling.
+- **Research Assistant, Humanoid Robot Intelligence** (Fort Lewis College, Dr. Yiyan Li): integrated the Booster K1 into a vision-language navigation benchmark and ran NaVILA live on the physical K1.
+- **Senior design, bridge crack-inspection arm** (Fort Lewis College, Dr. Yiyan Li; two-person team, my teammate builds a separate robot): all arm work is mine: CAN motor bring-up, kinematics/IK and trajectory planning, controller tuning, and vision integration on the physical reBot B601-DM.
+- **Team lead, NASA Colorado Robotics Challenge** (Dr. Charles Hakes): led a four-person team that built and fielded an autonomous 18-DoF hexapod; designed the electrical system and extended the firmware.
+- **Research Assistant, Computer Vision & Robotics** (Fort Lewis College, Dr. Kevin Wedeward): restored legacy Sawyer and Baxter robots and built synthetic-data and inspection tooling.
+- **Research Assistant, AI & Data** (Fort Lewis College, Dr. Matthew Welz): Power Apps music-library database for the FLC radio station, embedding-based artist-name matching, and LLM agents querying Neo4j.
 
 ## Toolbox
 
