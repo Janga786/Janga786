@@ -7,7 +7,7 @@ I am a senior in Computer Engineering at Fort Lewis College in Durango, Colorado
 ## Selected work
 
 **[k1-navila-research](https://github.com/Janga786/k1-navila-research)**: NaVILA, a vision-language navigation model, commanding a 50 Hz RL walking policy I trained for the Booster K1 humanoid.
-I added the K1 to the VLN-CE-Isaac benchmark and ran all 1,077 episodes; pipeline fixes and retraining raised success from under 1% to 18.3% (simulation), and ran a 2,400-episode ablation on evaluation repeatability. NaVILA also ran live on the real K1 for two episodes using Booster's built-in walker; my own policy has only worked in simulation.
+I added the K1 to the VLN-CE-Isaac benchmark and ran all 1,077 episodes. Pipeline fixes and retraining raised success from under 1% to 18.3% (simulation), and I ran a 2,400-episode ablation on evaluation repeatability. NaVILA also ran live on the real K1 for two episodes using Booster's built-in walker; my own policy has only worked in simulation.
 
 **[rebot-crack-vision](https://github.com/Janga786/rebot-crack-vision)**: my senior-design arm (reBot B601-DM) for bridge crack inspection.
 Seven motors over CAN in a 200 Hz loop, Jacobian, inverse kinematics and a minimum-jerk planner. A torque test measured 6.6 N·m of elbow gravity load against 2.7 N·m in the URDF; feed-forward and retuned gains cut holding error from 0.04–0.05 rad to 0.005 rad or less on the real arm.
