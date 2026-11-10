@@ -1,55 +1,52 @@
 # Jangara Bliss
 
-Computer engineering student at Fort Lewis College working on robot learning and embodied autonomy: benchmarks, simulation, controls, perception, and the embedded systems underneath them.
+I am a senior in Computer Engineering at Fort Lewis College in Durango, Colorado, graduating May 2027. I work on learned control for humanoid and legged robots, down to the embedded layer that drives the motors.
 
-**Portfolio: [janga786.github.io](https://janga786.github.io)** · [jangarabliss@gmail.com](mailto:jangarabliss@gmail.com) · [LinkedIn](https://www.linkedin.com/in/jangarabliss/)
+[Portfolio](https://janga786.github.io) · [LinkedIn](https://www.linkedin.com/in/jangarabliss/) · [jangarabliss@gmail.com](mailto:jangarabliss@gmail.com)
 
-## Research and flagship work
+## Selected work
 
-| Project | What it is |
-| --- | --- |
-| [xembench](https://github.com/Janga786/xembench) | Cross-embodiment, language-grounded manipulation benchmark in ManiSkill3: one policy interface, a Franka Panda arm and a Unitree G1 humanoid. 6,550 baseline episodes with Wilson CIs, a data-flywheel round, a documented negative result on precision manipulation, 198 tests |
-| [k1-vlm-navigation](https://github.com/Janga786/k1-vlm-navigation) | NaVILA vision-language model driving a velocity-tracking PPO locomotion policy on the Booster K1 humanoid in MuJoCo, with multi-step instructions, heading assist, and a real-robot deploy path (dry-run and live modes, watchdog, 73 unit tests) |
-| [k1_checkout_validator](https://github.com/Janga786/k1_checkout_validator) | ROS 2 cart-seek stack for the real K1: YOLO-World detection walks the K1 to a cart, stops about 1 m away, then circles it until it reads a QR code (Booster's walker, ~25 live runs); odom-frame tracking and a gated, hard-clamped Booster SDK bridge with a lost-target stop |
-| [rebot-crack-vision](https://github.com/Janga786/rebot-crack-vision) | Senior-design bridge crack-inspection arm (reBot B601-DM, 6+1 DoF): zero-shot crack segmentation, Jacobian/IK and minimum-jerk planning, and first powered hardware runs (Oct 2026): 7 motors over CAN at 200 Hz, gravity/friction feed-forward identified on the real arm; post-tuning holds reached ≤ 0.005 rad error (41-run logged campaign, 28 completed) |
+**[k1-navila-research](https://github.com/Janga786/k1-navila-research)**: NaVILA, a vision-language navigation model, commanding a 50 Hz RL walking policy I trained for the Booster K1 humanoid.
+I added the K1 to the VLN-CE-Isaac benchmark and raised success on all 1,077 episodes from under 1% to 18.3% (simulation), and ran a 2,400-episode ablation on evaluation repeatability. NaVILA also ran live on the real K1 for two episodes using Booster's built-in walker; my own policy has only worked in simulation.
 
-Canonical NaVILA-on-K1 benchmark results (1,077 episodes, simulation) and the evidence base for the K1 evaluation-reliability results (two identically configured 300-episode runs: 15.0% vs 16.0% success, disagreeing on 11.0% of episodes) are in [k1-navila-research](https://github.com/Janga786/k1-navila-research); the write-up is on the [portfolio](https://janga786.github.io).
+**[rebot-crack-vision](https://github.com/Janga786/rebot-crack-vision)**: my senior-design arm (reBot B601-DM) for bridge crack inspection.
+Seven motors over CAN in a 200 Hz loop, Jacobian, inverse kinematics and a minimum-jerk planner. A torque test measured 6.6 N·m of elbow gravity load against 2.7 N·m in the URDF; feed-forward and retuned gains cut holding error from 0.04–0.05 rad to 0.005 rad or less on the real arm.
 
-## Robotics, perception and controls
+**[hexapod-cpg](https://github.com/Janga786/hexapod-cpg)**: the 18-DoF hexapod my four-person team built for NASA Space Grant's Colorado Robotics Challenge.
+I led the team, designed the electrical system and added IMU heading hold to firmware extended from Mark W's open-source design. The repo also has my Kuramoto CPG gait simulator (simulation only).
 
-| Project | What it is |
-| --- | --- |
-| [hexapod-cpg](https://github.com/Janga786/hexapod-cpg) | Custom 18-DoF hexapod from the NASA Colorado Robotics Challenge (chassis derived from an open-source skeleton): fielded IMU heading-hold firmware, mechanical CAD, and a simulation-only Kuramoto-CPG gait study with a 34-test suite |
-| [kuka-kr6-kinematics](https://github.com/Janga786/kuka-kr6-kinematics) | From-scratch forward/inverse kinematics, geometric Jacobian, singularity diagnostics, and trajectory planning for the KUKA KR 6 R900, with a 39-test suite |
-| [lidar-pointcloud-motion-pipeline](https://github.com/Janga786/lidar-pointcloud-motion-pipeline) | Open3D + NumPy point-cloud motion analysis: PCA orientation, frame-pair motion detection, ICP rotation-rate estimation |
-| [CV-YOLO-Inspection](https://github.com/Janga786/CV-YOLO-Inspection) | Synthetic-data inspection pipeline: Blender-rendered training data, YOLO11 detection, autoencoder anomaly detection |
-| [robot_vision](https://github.com/Janga786/robot_vision) | Synthetic labeled training data from a single photogrammetry scan, using Blender domain randomization into YOLO training |
-| [Baxter-Sawyer_Work_Station_Windows](https://github.com/Janga786/Baxter-Sawyer_Work_Station_Windows) | Dockerized ROS 1 Indigo + ROS 2 Humble workstation with ros1_bridge for restoring and developing on Baxter/Sawyer |
+**[k1_checkout_validator](https://github.com/Janga786/k1_checkout_validator)**: ROS 2 cart-seek stack for the real K1.
+YOLO-World finds a cart, the K1 walks to about 1 m from it and circles it to read a QR code, behind a gated, speed-clamped Booster SDK bridge.
 
-## Embedded systems and hardware
+**[kuka-kr6-kinematics](https://github.com/Janga786/kuka-kr6-kinematics)**: forward and inverse kinematics, geometric Jacobian, singularity checks and trajectory planning for the KUKA KR 6 R900, written from the geometry and checked against a generated URDF. Built for Intro to Robotics.
 
-| Project | What it is |
-| --- | --- |
-| [basys3-fpga-portfolio](https://github.com/Janga786/basys3-fpga-portfolio) | Six Verilog systems on the Artix-7: PicoBlaze + OLED, XADC SPI bridge, PS/2-to-UART stack, soft-core CPU, FSMs |
-| [arduino-mega-microcontrollers](https://github.com/Janga786/arduino-mega-microcontrollers) | Custom ATmega2560 PCB with production Gerbers, bare-metal 40 kHz ADC sampling, a hand-built IR link-layer protocol |
-| [cmos-vlsi-spice-portfolio](https://github.com/Janga786/cmos-vlsi-spice-portfolio) | Transistor-level CMOS design in 0.6 µm SCMOS: 8-bit ALU, R-2R DAC + flash ADC, transmission-gate MUX, full gate library |
+## More
 
-## Software
+Robotics and perception
+- [k1-vlm-navigation](https://github.com/Janga786/k1-vlm-navigation): NaVILA driving a PPO walking policy on the K1 in MuJoCo, plus a deploy path for the real robot's built-in walker.
+- [xembench](https://github.com/Janga786/xembench): ManiSkill3 benchmark for language-conditioned manipulation on a Panda arm and a Unitree G1 humanoid; 6,550 baseline episodes, cross-embodiment transfer still near 0%.
+- [Baxter-Sawyer_Work_Station_Windows](https://github.com/Janga786/Baxter-Sawyer_Work_Station_Windows): Docker workstation (ROS 1 Indigo, ROS 2 Humble, ros1_bridge) from reviving two Rethink robots.
+- [Baxter-Troubleshooting](https://github.com/Janga786/Baxter-Troubleshooting): boot, networking and SDK fixes for keeping Baxter running.
+- [robot_vision](https://github.com/Janga786/robot_vision): Blender synthetic training data from one photogrammetry scan, for YOLO detection.
+- [CV-YOLO-Inspection](https://github.com/Janga786/CV-YOLO-Inspection): synthetic-data YOLO and autoencoder pipeline for spotting can defects.
+- [lidar-pointcloud-motion-pipeline](https://github.com/Janga786/lidar-pointcloud-motion-pipeline): Open3D point-cloud dimensions, orientation and ICP rotation-rate estimation.
 
-| Project | What it is |
-| --- | --- |
-| [cpp-algorithms-portfolio](https://github.com/Janga786/cpp-algorithms-portfolio) | Six classical CS algorithms in self-contained C++17: union-find, MST, Huffman, optimal BST DP |
-| [basecamp](https://github.com/Janga786/basecamp) | Mobile-first training and habits PWA (React + TypeScript + Vite, swappable localStorage/Supabase backend, Google Health API sync) |
-| [pacman-pygame](https://github.com/Janga786/pacman-pygame) | A complete Pac-Man clone in 443 lines of Pygame, with four target-chasing ghosts, power pellets, and a level state machine |
+Embedded and digital design
+- [arduino-mega-microcontrollers](https://github.com/Janga786/arduino-mega-microcontrollers): custom ATmega2560 PCB, bare-metal 40 kHz ADC sampling, an IR link protocol.
+- [basys3-fpga-portfolio](https://github.com/Janga786/basys3-fpga-portfolio): six Verilog designs on the Artix-7, including PicoBlaze, SPI, PS/2-to-UART and FSMs.
+- [cmos-vlsi-spice-portfolio](https://github.com/Janga786/cmos-vlsi-spice-portfolio): transistor-level CMOS in 0.6 µm SCMOS: 8-bit ALU, R-2R DAC, flash ADC.
+- [Digital-Signal-Processing-Filter](https://github.com/Janga786/Digital-Signal-Processing-Filter): second-order IIR resonator in Python with DTFT analysis.
+
+Software
+- [cpp-algorithms-portfolio](https://github.com/Janga786/cpp-algorithms-portfolio): classical algorithms in C++17 (union-find, MST, Huffman, optimal BST).
+- [pacman-pygame](https://github.com/Janga786/pacman-pygame): a single-file Pac-Man clone in Pygame.
+- [basecamp](https://github.com/Janga786/basecamp): React and TypeScript PWA for daily training habits.
+- [Durango-Food-Picker](https://github.com/Janga786/Durango-Food-Picker): installable web app that picks a restaurant in Durango.
 
 ## Experience
 
-- **Research Assistant, Humanoid Robot Intelligence** (Fort Lewis College, Dr. Yiyan Li): integrated the Booster K1 into a vision-language navigation benchmark and ran NaVILA live on the physical K1.
-- **Senior design, bridge crack-inspection arm** (Fort Lewis College, Dr. Yiyan Li; two-person team, my teammate is building a second arm from scratch, so all work on this arm is mine): CAN motor bring-up, kinematics/IK and trajectory planning, controller tuning, and vision integration on the physical reBot B601-DM. I designed the system and wrote line-by-line pseudocode; AI coding agents wrote the Python and C++ from it, with an independent review agent checking each change; all hardware work is mine.
-- **Team lead, NASA Colorado Robotics Challenge** (Dr. Charles Hakes): led a four-person team that built and fielded an autonomous 18-DoF hexapod; designed the electrical system and extended the firmware.
-- **Research Assistant, Computer Vision & Robotics** (Fort Lewis College, Dr. Kevin Wedeward): restored legacy Sawyer and Baxter robots and built synthetic-data and inspection tooling.
-- **Research Assistant, AI & Data** (Fort Lewis College, Dr. Matthew Welz): Power Apps music-library database for the FLC radio station, embedding-based artist-name matching, and LLM agents querying Neo4j.
-
-## Toolbox
-
-Python · C/C++ · ROS 1/2 · PyTorch · MuJoCo · ManiSkill3 · Isaac Sim · OpenCV · Verilog · EAGLE · Docker
+- Research Assistant, Humanoid Robot Intelligence · Dr. Yiyan Li · May 2026 – Aug 2026
+- Senior Design, Bridge Crack-Inspection Arm · Dr. Yiyan Li · Sep 2026 – present
+- Team Lead, Colorado Robotics Challenge (NASA Space Grant) · Dr. Charles Hakes · Oct 2025 – Apr 2026
+- Research Assistant, Computer Vision & Robotics · Dr. Kevin Wedeward · May 2025 – Sep 2025: revived Rethink's Sawyer and Baxter; solar-panel hotspot inspection took 2nd place at the FLC Physics & Engineering Symposium
+- Research Assistant, AI & Data · Dr. Matthew Welz · Aug 2024 – Oct 2025: music-library database for the FLC radio station
