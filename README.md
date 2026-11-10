@@ -39,9 +39,6 @@ Embedded and digital design
 
 Software
 - [cpp-algorithms-portfolio](https://github.com/Janga786/cpp-algorithms-portfolio): classical algorithms in C++17 (union-find, MST, Huffman, optimal BST).
-- [pacman-pygame](https://github.com/Janga786/pacman-pygame): a single-file Pac-Man clone in Pygame.
-- [basecamp](https://github.com/Janga786/basecamp): React and TypeScript PWA for daily training habits.
-- [Durango-Food-Picker](https://github.com/Janga786/Durango-Food-Picker): installable web app that picks a restaurant in Durango.
 
 ## Experience
 
